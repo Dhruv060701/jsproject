@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Submission and Deletion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .records-list {
+            margin-top: 20px;
+        }
+
+        .record {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .delete-btn {
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Submit Record</h2>
+        <form id="recordForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required />
+
+            <button type="submit">Submit Record</button>
+        </form>
+
+        <div class="records-list" id="recordsList">
+            <h3>Submitted Records</h3>
+        </div>
+    </div>
+
+    <script src="add&sub.js">
+    </script>
+
+</body>
+</html>
